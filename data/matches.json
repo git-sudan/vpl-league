@@ -1,0 +1,302 @@
+[
+  {
+    "match_id": 1,
+    "team_a": "SKE Comrades",
+    "team_b": "Wolf Pack"
+  },
+  {
+    "match_id": 2,
+    "team_a": "Wolf Pack",
+    "team_b": "BMW Boys"
+  },
+  {
+    "match_id": 3,
+    "team_a": "BMW Boys",
+    "team_b": "Red Dragon"
+  },
+  {
+    "match_id": 4,
+    "team_a": "Red Dragon",
+    "team_b": "SG"
+  },
+  {
+    "match_id": 5,
+    "team_a": "SG",
+    "team_b": "Wall Street Warriors"
+  },
+  {
+    "match_id": 6,
+    "team_a": "Wall Street Warriors",
+    "team_b": "Friendz Titans"
+  },
+  {
+    "match_id": 7,
+    "team_a": "Friendz Titans",
+    "team_b": "Mufasa"
+  },
+  {
+    "match_id": 8,
+    "team_a": "Mufasa",
+    "team_b": "Phoenix Strikers"
+  },
+  {
+    "match_id": 9,
+    "team_a": "Phoenix Strikers",
+    "team_b": "Clutch Knights"
+  },
+  {
+    "match_id": 10,
+    "team_a": "Clutch Knights",
+    "team_b": "SKE Comrades"
+  },
+  {
+    "match_id": 11,
+    "team_a": "SKE Comrades",
+    "team_b": "Wolf Pack"
+  },
+  {
+    "match_id": 12,
+    "team_a": "Wolf Pack",
+    "team_b": "BMW Boys"
+  },
+  {
+    "match_id": 13,
+    "team_a": "BMW Boys",
+    "team_b": "Red Dragon"
+  },
+  {
+    "match_id": 14,
+    "team_a": "Red Dragon",
+    "team_b": "SG"
+  },
+  {
+    "match_id": 15,
+    "team_a": "SG",
+    "team_b": "Wall Street Warriors"
+  },
+  {
+    "match_id": 16,
+    "team_a": "Wall Street Warriors",
+    "team_b": "Friendz Titans"
+  },
+  {
+    "match_id": 17,
+    "team_a": "Friendz Titans",
+    "team_b": "Mufasa"
+  },
+  {
+    "match_id": 18,
+    "team_a": "Mufasa",
+    "team_b": "Phoenix Strikers"
+  },
+  {
+    "match_id": 19,
+    "team_a": "Phoenix Strikers",
+    "team_b": "Clutch Knights"
+  },
+  {
+    "match_id": 20,
+    "team_a": "Clutch Knights",
+    "team_b": "SKE Comrades"
+  },
+  {
+    "match_id": 21,
+    "team_a": "SKE Comrades",
+    "team_b": "Wolf Pack"
+  },
+  {
+    "match_id": 22,
+    "team_a": "Wolf Pack",
+    "team_b": "BMW Boys"
+  },
+  {
+    "match_id": 23,
+    "team_a": "BMW Boys",
+    "team_b": "Red Dragon"
+  },
+  {
+    "match_id": 24,
+    "team_a": "Red Dragon",
+    "team_b": "SG"
+  },
+  {
+    "match_id": 25,
+    "team_a": "SG",
+    "team_b": "Wall Street Warriors"
+  },
+  {
+    "match_id": 26,
+    "team_a": "Wall Street Warriors",
+    "team_b": "Friendz Titans"
+  },
+  {
+    "match_id": 27,
+    "team_a": "Friendz Titans",
+    "team_b": "Mufasa"
+  },
+  {
+    "match_id": 28,
+    "team_a": "Mufasa",
+    "team_b": "Phoenix Strikers"
+  },
+  {
+    "match_id": 29,
+    "team_a": "Phoenix Strikers",
+    "team_b": "Clutch Knights"
+  },
+  {
+    "match_id": 30,
+    "team_a": "Clutch Knights",
+    "team_b": "SKE Comrades"
+  },
+  {
+    "match_id": 31,
+    "team_a": "SKE Comrades",
+    "team_b": "Wolf Pack"
+  },
+  {
+    "match_id": 32,
+    "team_a": "Wolf Pack",
+    "team_b": "BMW Boys"
+  },
+  {
+    "match_id": 33,
+    "team_a": "BMW Boys",
+    "team_b": "Red Dragon"
+  },
+  {
+    "match_id": 34,
+    "team_a": "Red Dragon",
+    "team_b": "SG"
+  },
+  {
+    "match_id": 35,
+    "team_a": "SG",
+    "team_b": "Wall Street Warriors"
+  },
+  {
+    "match_id": 36,
+    "team_a": "Wall Street Warriors",
+    "team_b": "Friendz Titans"
+  },
+  {
+    "match_id": 37,
+    "team_a": "Friendz Titans",
+    "team_b": "Mufasa"
+  },
+  {
+    "match_id": 38,
+    "team_a": "Mufasa",
+    "team_b": "Phoenix Strikers"
+  },
+  {
+    "match_id": 39,
+    "team_a": "Phoenix Strikers",
+    "team_b": "Clutch Knights"
+  },
+  {
+    "match_id": 40,
+    "team_a": "Clutch Knights",
+    "team_b": "SKE Comrades"
+  },
+  {
+    "match_id": 41,
+    "team_a": "SKE Comrades",
+    "team_b": "Wolf Pack"
+  },
+  {
+    "match_id": 42,
+    "team_a": "Wolf Pack",
+    "team_b": "BMW Boys"
+  },
+  {
+    "match_id": 43,
+    "team_a": "BMW Boys",
+    "team_b": "Red Dragon"
+  },
+  {
+    "match_id": 44,
+    "team_a": "Red Dragon",
+    "team_b": "SG"
+  },
+  {
+    "match_id": 45,
+    "team_a": "SG",
+    "team_b": "Wall Street Warriors"
+  },
+  {
+    "match_id": 46,
+    "team_a": "Wall Street Warriors",
+    "team_b": "Friendz Titans"
+  },
+  {
+    "match_id": 47,
+    "team_a": "Friendz Titans",
+    "team_b": "Mufasa"
+  },
+  {
+    "match_id": 48,
+    "team_a": "Mufasa",
+    "team_b": "Phoenix Strikers"
+  },
+  {
+    "match_id": 49,
+    "team_a": "Phoenix Strikers",
+    "team_b": "Clutch Knights"
+  },
+  {
+    "match_id": 50,
+    "team_a": "Clutch Knights",
+    "team_b": "SKE Comrades"
+  },
+  {
+    "match_id": 51,
+    "team_a": "SKE Comrades",
+    "team_b": "Wolf Pack"
+  },
+  {
+    "match_id": 52,
+    "team_a": "Wolf Pack",
+    "team_b": "BMW Boys"
+  },
+  {
+    "match_id": 53,
+    "team_a": "BMW Boys",
+    "team_b": "Red Dragon"
+  },
+  {
+    "match_id": 54,
+    "team_a": "Red Dragon",
+    "team_b": "SG"
+  },
+  {
+    "match_id": 55,
+    "team_a": "SG",
+    "team_b": "Wall Street Warriors"
+  },
+  {
+    "match_id": 56,
+    "team_a": "Wall Street Warriors",
+    "team_b": "Friendz Titans"
+  },
+  {
+    "match_id": 57,
+    "team_a": "Friendz Titans",
+    "team_b": "Mufasa"
+  },
+  {
+    "match_id": 58,
+    "team_a": "Mufasa",
+    "team_b": "Phoenix Strikers"
+  },
+  {
+    "match_id": 59,
+    "team_a": "Phoenix Strikers",
+    "team_b": "Clutch Knights"
+  },
+  {
+    "match_id": 60,
+    "team_a": "Clutch Knights",
+    "team_b": "SKE Comrades"
+  }
+]
