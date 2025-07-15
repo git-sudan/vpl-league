@@ -137,12 +137,16 @@ elif page == "View My Teams":
         }
 
         # Group submissions
-        grouped = (
-            df.groupby(["match_id", "name", "mobile"])["player"]
-            .apply(lambda x: ", ".join(x))
-            .reset_index()
-            .rename(columns={"player": "players"})
-        )
+        if "player" in df.columns:
+            grouped = (
+                df.groupby(["match_id", "name", "mobile"])["player"]
+                .apply(lambda x: ", ".join(x))
+                .reset_index()
+                .rename(columns={"player": "players"})
+            )
+        else:
+            st.warning("No player data found in teams.csv.")
+            grouped = pd.DataFrame(columns=["match", "name", "mobile", "players"])
 
         # Map match_id to team names
         grouped["match"] = grouped["match_id"].astype(str).map(match_map)
