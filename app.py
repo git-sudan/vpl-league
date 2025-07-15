@@ -49,21 +49,26 @@ if page == "Select Team":
         format_func=lambda x: f"{x['match_id']}: {x['team_a']} vs {x['team_b']}"
     )
 
-    team_a_players = players_data[match["team_a"]]
-    team_b_players = players_data[match["team_b"]]
-    all_players = team_a_players + team_b_players
+    team_a = match["team_a"]
+    team_b = match["team_b"]
+    team_a_players = players_data[team_a]
+    team_b_players = players_data[team_b]
+
+    # Add team name in brackets
+    all_players = [(player, team_a) for player in team_a_players] + [(player, team_b) for player in team_b_players]
 
     name = st.text_input("Enter your name")
     mobile = st.text_input("Enter your mobile number")
     selected_players = []
+
     st.write(f"**Select 11 Players**")
-    for player in all_players:
+    for player, team in all_players:
+        label = f"{player} ({team})"
         if len(selected_players) < 11:
-            if st.checkbox(player, key=player):
+            if st.checkbox(label, key=label):
                 selected_players.append(player)
         else:
-            # Show unchecked checkboxes as disabled after 11 are selected
-            st.checkbox(player, key=player, disabled=True)
+            st.checkbox(label, key=label, disabled=True)
 
     st.info(f"Players selected: {len(selected_players)} / 11. Players remaining: {11 - len(selected_players)}")
 
