@@ -122,36 +122,33 @@ elif page == "View My Teams":
     if not os.path.exists("teams.csv"):
         st.info("No teams submitted yet.")
     else:
-        # Load data
         df = pd.read_csv("teams.csv")
-        with open("data/matches.json") as f:
-            matches_data = json.load(f)
 
-        # Clean mobile formatting
-        df["mobile"] = df["mobile"].astype(str).str.replace(",", "").str.strip()
+        if "mobile" not in df.columns:
+            st.error("The uploaded data does not contain a 'mobile' column.")
+        else:
+            # Clean and transform
+            df["mobile"] = df["mobile"].astype(str).str.replace(",", "").str.strip()
 
-        # Create match_id to team names mapping
-        match_map = {
-            str(match["match_id"]): f"{match['team_a']} vs {match['team_b']}"
-            for match in matches_data
-        }
+            # Load matches
+            with open("data/matches.json") as f:
+                matches_data = json.load(f)
 
-        # Group submissions
-        if "player" in df.columns:
+            match_map = {
+                str(match["match_id"]): f"{match['team_a']} vs {match['team_b']}"
+                for match in matches_data
+            }
+
             grouped = (
                 df.groupby(["match_id", "name", "mobile"])["player"]
                 .apply(lambda x: ", ".join(x))
                 .reset_index()
                 .rename(columns={"player": "players"})
             )
-        else:
-            st.warning("No player data found in teams.csv.")
-            grouped = pd.DataFrame(columns=["match", "name", "mobile", "players"])
 
-        # Map match_id to team names
-        grouped["match"] = grouped["match_id"].astype(str).map(match_map)
-        grouped = grouped[["match", "name", "mobile", "players"]]  # Rearranged columns
-        grouped.index = grouped.index + 1
+            grouped["match"] = grouped["match_id"].astype(str).map(match_map)
+            grouped = grouped[["match", "name", "mobile", "players"]]
+            grouped.index = grouped.index + 1
 
-        # Display as wide table
-        st.dataframe(grouped, use_container_width=True)
+            st.dataframe(grouped, use_container_width=True)
+
