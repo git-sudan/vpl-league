@@ -55,7 +55,17 @@ if page == "Select Team":
 
     name = st.text_input("Enter your name")
     mobile = st.text_input("Enter your mobile number")
-    selected_players = st.multiselect("Choose 11 Players", all_players, max_selections=11)
+    selected_players = []
+    st.write(f"**Select 11 Players**")
+    for player in all_players:
+        if len(selected_players) < 11:
+            if st.checkbox(player, key=player):
+                selected_players.append(player)
+        else:
+            # Show unchecked checkboxes as disabled after 11 are selected
+            st.checkbox(player, key=player, disabled=True)
+
+    st.info(f"Players selected: {len(selected_players)} / 11. Players remaining: {11 - len(selected_players)}")
 
     if st.button("Submit Team"):
         if not name or not mobile:
@@ -135,8 +145,3 @@ elif page == "View My Teams":
 
         # Display as wide table
         st.dataframe(grouped, use_container_width=True)
-
-
-
-
-
