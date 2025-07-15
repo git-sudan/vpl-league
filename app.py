@@ -40,6 +40,7 @@ st.markdown(custom_css, unsafe_allow_html=True)
 page = st.sidebar.radio("Go to", ["Select Team", "Leaderboard", "View My Teams"])
 
 # --- Select Team Page ---
+# --- Select Team Page ---
 if page == "Select Team":
     st.title("🏏 VPL Fantasy League")
 
@@ -61,16 +62,16 @@ if page == "Select Team":
     mobile = st.text_input("Enter your mobile number")
     selected_players = []
 
-    st.write(f"**Select 11 Players**")
+    st.write(f"**Select 7 Players**")
     for player, team in all_players:
         label = f"{player} ({team})"
-        if len(selected_players) < 11:
+        if len(selected_players) < 7:
             if st.checkbox(label, key=label):
                 selected_players.append(player)
         else:
             st.checkbox(label, key=label, disabled=True)
 
-    st.info(f"Players selected: {len(selected_players)} / 11. Players remaining: {11 - len(selected_players)}")
+    st.info(f"Players selected: {len(selected_players)} / 7. Players remaining: {7 - len(selected_players)}")
 
     if st.button("Submit Team"):
         if not name or not mobile:
