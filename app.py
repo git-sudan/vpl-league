@@ -76,8 +76,8 @@ if page == "Select Team":
     if st.button("Submit Team"):
         if not name or not mobile:
             st.warning("Please enter your name and mobile number.")
-        elif len(selected_players) != 11:
-            st.warning("Please select exactly 11 players.")
+        elif len(selected_players) != 7:
+            st.warning("Please select exactly 7 players.")
         else:
             df = pd.DataFrame({
                 "match_id": match["match_id"],
